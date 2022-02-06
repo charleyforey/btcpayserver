@@ -13,7 +13,7 @@
 
 <header class="text-center">
     <h1>@ViewData["Title"]</h1>
-    <p class="lead text-secondary mt-3">In order to securely connect to your hardware wallet you must first download, install, and run the BTCPay Server Vault.</p>
+    <p class="lead text-secondary mt-3">In order to securely connect to your hardware wallet you must first download, install, and run the ZEUSPay Vault.</p>
 </header>
 
 @if (!ViewContext.ModelState.IsValid)
@@ -59,7 +59,7 @@
     <input asp-for="CryptoCode" type="hidden" />
     <input asp-for="AccountKey" type="hidden" />
     <input asp-for="Source" type="hidden" value="Vault"/>
-    <input asp-for="DerivationSchemeFormat" type="hidden" value="BTCPay" />
+    <input asp-for="DerivationSchemeFormat" type="hidden" value="ZEUSPay" />
 
     <div class="row mb-5">
         <div class="col-md-8 mx-auto">
