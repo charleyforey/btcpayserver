@@ -37,3 +37,9 @@ VOLUME /datadir
 COPY --from=builder "/app" .
 COPY docker-entrypoint.sh docker-entrypoint.sh
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
+
+#build image
+docker build -t zeus-pay/btcpayserver:latest --file ./amd64.Dockerfile .
+
+#push image
+docker push zeus-pay/btcpayserver:latest
