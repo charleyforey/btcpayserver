@@ -39,7 +39,7 @@ COPY docker-entrypoint.sh docker-entrypoint.sh
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
 
 #build image
-docker build -t zeus-pay/btcpayserver:latest --file ./amd64.Dockerfile .
+docker build -t zeus-pay/btcpayserver:1.0.0.1 --file ./amd64.Dockerfile .
 
 #push image
-docker push zeus-pay/btcpayserver:latest
+docker push zeus-pay/btcpayserver:1.0.0.1
