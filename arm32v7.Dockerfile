@@ -42,10 +42,3 @@ VOLUME /datadir
 COPY --from=builder "/app" .
 COPY docker-entrypoint.sh docker-entrypoint.sh
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
-
-
-#build image
-docker build -t zeuspay123/btcpayserver:2.0.0.1 --file ./arm32v7.Dockerfile .
-
-#push image
-docker push zeuspay123/btcpayserver:2.0.0.1
