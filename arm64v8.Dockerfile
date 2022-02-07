@@ -46,7 +46,7 @@ ENTRYPOINT ["/app/docker-entrypoint.sh"]
 
 
 #build image
-docker build -t zeus-pay/btcpayserver:2.0.0.1 --file ./arm64v8.Dockerfile .
+docker build -t zeus-pay/btcpayserver:latest --file ./arm64v8.Dockerfile .
 
 #push image
-docker push zeus-pay/btcpayserver:2.0.0.1
+docker push zeus-pay/btcpayserver:latest
